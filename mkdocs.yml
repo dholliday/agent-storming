@@ -55,7 +55,12 @@ nav:
       - guide/worked-example.md
       - guide/implementing.md
       - guide/cheat-sheet.md
+  - Examples:
+      - examples/insurance-underwriting.md
   - Companion app spec: app-spec.md
+
+extra_css:
+  - stylesheets/agent-storming.css
 
 markdown_extensions:
   - admonition
