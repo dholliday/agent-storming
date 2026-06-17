@@ -4,9 +4,23 @@
 
 This repository is the **method**, not an app. It documents how to run Agent Storming, how it differs from Event Storming, and how to adopt it in your business.
 
+## 📖 Read the docs
+
+**→ [dholliday.github.io/agent-storming](https://dholliday.github.io/agent-storming/)** — the full guide, beautifully hosted (search, dark mode, printable cheat sheet).
+
+The site is built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) from the Markdown in [`docs/`](./docs) and deployed to GitHub Pages automatically on every push to `main` (see [`.github/workflows/docs.yml`](./.github/workflows/docs.yml)).
+
+### Preview locally
+
+```bash
+python3 -m venv .venv-docs && source .venv-docs/bin/activate
+pip install -r requirements-docs.txt
+mkdocs serve   # http://127.0.0.1:8000
+```
+
 ## Start here
 
-📖 **[AGENT_STORMING.md](./AGENT_STORMING.md)** — the comprehensive guide:
+📖 **[The comprehensive guide](https://dholliday.github.io/agent-storming/guide/what-is-agent-storming/)** covers:
 
 - What Agent Storming is and why it exists
 - How it differs from Event Storming (element mapping + agent-native additions)
@@ -19,4 +33,4 @@ This repository is the **method**, not an app. It documents how to run Agent Sto
 
 ## Related
 
-A companion Miro-style web app that supports the method (an infinite collaborative canvas with the grammar built in) is specified separately in [`AGENT_STORMING_APP_CLAUDE.md`](./AGENT_STORMING_APP_CLAUDE.md). You don't need the app to run a session — a wall and sticky notes are enough.
+A companion Miro-style web app that supports the method (an infinite collaborative canvas with the grammar built in) is specified separately in the [companion app spec](https://dholliday.github.io/agent-storming/app-spec/) ([source](./docs/app-spec.md)). You don't need the app to run a session — a wall and sticky notes are enough.

@@ -1,4 +1,6 @@
-# CLAUDE.md — Agent Storming
+# Companion app specification
+
+> This is the build specification for the optional companion web app — a Miro-style collaborative canvas with the Agent Storming grammar built in. You don't need it to run a session; a wall and sticky notes are enough.
 
 > Project memory for Claude Code. Keep this file concise and current. The **grammar** in §2 is the single source of truth for the product; UI colours, labels, and validation all derive from it.
 

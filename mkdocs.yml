@@ -1,0 +1,82 @@
+site_name: Agent Storming
+site_description: >-
+  A workshop method for designing multi-agent AI systems — Event Storming,
+  reinterpreted for a world where the actors are AI agents.
+site_url: https://dholliday.github.io/agent-storming/
+
+repo_name: dholliday/agent-storming
+repo_url: https://github.com/dholliday/agent-storming
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+nav:
+  - Home: index.md
+  - The method:
+      - guide/what-is-agent-storming.md
+      - guide/why-it-exists.md
+      - guide/vs-event-storming.md
+      - guide/grammar.md
+      - guide/levels.md
+  - Running a session:
+      - guide/running-a-session.md
+      - guide/worked-example.md
+      - guide/implementing.md
+      - guide/cheat-sheet.md
+  - Companion app spec: app-spec.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dholliday/agent-storming
